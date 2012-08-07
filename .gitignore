@@ -14,5 +14,6 @@
 /log/*.log
 /tmp
 *.swp
-.*.*.swp
-.*.swp
+*.swo
+*.sw?
+*~
