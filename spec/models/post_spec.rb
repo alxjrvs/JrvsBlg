@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Post do
-  pending "add some examples to (or delete) #{__FILE__}"
+    context 'Pages should be Valid' do
+      with :post
+      it { post.should be_valid }
+    end
 end
