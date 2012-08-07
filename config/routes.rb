@@ -9,6 +9,10 @@ JrvsBlg::Application.routes.draw do
 
   resources :users
 
+  namespace :alx_admin do
+    resources :pages, :posts, :tags
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
