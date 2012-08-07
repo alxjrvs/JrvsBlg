@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'page'
+#require 'page'
 
 describe Page do
     context 'Pages should be Valid' do
