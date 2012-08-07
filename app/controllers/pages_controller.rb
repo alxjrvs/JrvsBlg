@@ -1,10 +1,9 @@
-
 class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
     @pages = Page.all
-  
+    #@user = current_user
 
     respond_to do |format|
       format.html # index.html.erb
