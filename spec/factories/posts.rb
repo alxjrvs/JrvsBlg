@@ -1,0 +1,8 @@
+# Read about factories at https://github.com/thoughtbot/factory_girl
+
+FactoryGirl.define do
+  factory :post do
+  tilte "The Time I did That Thing" 
+  content " WWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the forestWhen I was the king of the foresthen I was the king of the forest"
+  end
+end
