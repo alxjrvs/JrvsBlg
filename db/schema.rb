@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(:version => 20120807164700) do
   create_table "pages", :force => true do |t|
     t.string   "title"
     t.text     "content"
-    t.text     "rendered_content"
+    t.string   "blurb"
     t.integer  "user_id"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "pages", ["user_id"], :name => "index_pages_on_user_id"

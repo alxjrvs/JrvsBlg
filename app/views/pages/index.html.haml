@@ -1,15 +1,11 @@
-%h1 ALEX JARVIS
-%h2 Not a Patient Man.
-
-
 - @pages.each do |page|
   %h4= page.title
-  %p= format page.content
+  %p= page.content
   - if @user
     %p= link_to 'Show', page
     %p= link_to 'Edit', edit_page_path(page)
     %p= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete
 
 %br
--if @user
-  = link_to 'New Page', new_page_path
+-#if current_user
+  -#= link_to 'New Page', new_page_path

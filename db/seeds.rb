@@ -10,11 +10,11 @@
 
   alx.posts.create(:title => "Songs from the Tommorow's of Yesterday's present", :content => "##It's Simple. 
 **Kill the Batman.**
-")
+", :blurb => "A brief look inward.")
   alx.posts.create(:title => "Sing Do Wah Diddy", :content => " #H1 Test
 =======
 ##H2 test
 *how does this look?*
-**How about this?**")
+**How about this?**", :blurb => "Diddy dum diddy do.")
 
 puts "done!"

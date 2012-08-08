@@ -5,7 +5,7 @@
   = @page.title
 %p
   %b Content:
-  = @page.content
+  =format @page.content
 
 = link_to 'Edit', edit_page_path(@page)
 \|

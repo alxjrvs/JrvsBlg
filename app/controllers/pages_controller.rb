@@ -36,7 +36,6 @@ class PagesController < ApplicationController
   # POST /pages.json
   def create
       redirect_to root_url
-    end
   end
 
   # PUT /pages/1
