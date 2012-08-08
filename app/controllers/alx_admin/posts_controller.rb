@@ -1,5 +1,5 @@
 
-class PostsController < ApplicationController
+class AlxAdmin::PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index

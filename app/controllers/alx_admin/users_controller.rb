@@ -1,5 +1,4 @@
-
-class UsersController < ApplicationController
+class AlxAdmin::UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index

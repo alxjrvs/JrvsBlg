@@ -1,5 +1,5 @@
 
-class PagesController < ApplicationController
+class AlxAdmin::PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index

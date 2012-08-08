@@ -1,5 +1,4 @@
-
-class TagsController < ApplicationController
+class AlxAdmin::TagsController < ApplicationController
   # GET /tags
   # GET /tags.json
   def index
