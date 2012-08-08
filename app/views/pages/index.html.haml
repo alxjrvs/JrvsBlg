@@ -4,12 +4,12 @@
 
 - @pages.each do |page|
   %h4= page.title
-  %p= page.content
+  %p= format page.content
   - if @user
     %p= link_to 'Show', page
     %p= link_to 'Edit', edit_page_path(page)
     %p= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete
 
 %br
--#if current_user
-  -#= link_to 'New Page', new_page_path
+-if @user
+  = link_to 'New Page', new_page_path

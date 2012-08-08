@@ -9,13 +9,14 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'rspec'
-  gem 'factory_girl_rspec' 
+  gem 'factory_girl_rspec'
   gem 'rspec-pride'
   gem 'factory_girl_rails', "~> 4.0"
   gem 'factory_girl'
   gem 'rspec-subject-extensions'
 end
 
+gem 'bluecloth', '>= 2.0.0'
 gem 'devise'
 gem 'hpricot'
 gem 'bootstrap-sass', '2.0.0'
