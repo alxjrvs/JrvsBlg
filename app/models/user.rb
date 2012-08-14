@@ -9,5 +9,6 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :fname, :lname
   has_many :posts
+  has_many :projects
   validates :fname, :lname, :presence => true
 end

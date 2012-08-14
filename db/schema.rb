@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20120807164700) do
     t.text     "content"
     t.string   "blurb"
     t.integer  "user_id"
+    t.string   "type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

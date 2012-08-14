@@ -5,6 +5,7 @@ class CreatePages < ActiveRecord::Migration
       t.text        :content
       t.string      :blurb
       t.references  :user
+      t.string      :type
       t.timestamps
     end
     add_index :pages, :user_id

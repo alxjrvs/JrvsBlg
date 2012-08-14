@@ -5,13 +5,14 @@ JrvsBlg::Application.routes.draw do
 
   resources :pages
 
+  resources :projects
   resources :posts
 
   resources :users
   resources :home
   resources :alx_admin
   namespace :alx_admin do
-    resources :pages, :posts, :tags
+    resources :pages, :posts, :tags, :projects
   end
 
   # The priority is based upon order of creation:

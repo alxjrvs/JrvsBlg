@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @pages = Page.all
+    #@pages = Page.all
     @posts = Post.all
     @projects = Project.all
   end

@@ -11,10 +11,16 @@
   alx.posts.create(:title => "Songs from the Tommorow's of Yesterday's present", :content => "##It's Simple. 
 **Kill the Batman.**
 ", :blurb => "A brief look inward.")
+  alx.posts.create(:title => "Songs from the Tommorow's of Yesterday's present", :content => "##It's Simple. 
+**Kill the Batman.**
+", :blurb => "A brief look inward.")
   alx.posts.create(:title => "Sing Do Wah Diddy", :content => " #H1 Test
 =======
 ##H2 test
 *how does this look?*
 **How about this?**", :blurb => "Diddy dum diddy do.")
 
+  alx.projects.create(:title => "Pathfounder", :content => "A cool thing I am making for people who play the 'Pathfinder' RPG.", :blurb => "A cool thing I am making for people who play the 'Pathfinder' RPG."  )
+  alx.projects.create(:title => "Pathfounder", :content => "A cool thing I am making for people who play the 'Pathfinder' RPG.", :blurb => "A cool thing I am making for people who play the 'Pathfinder' RPG."  )
+  alx.projects.create(:title => "Rollr", :blurb => "My Gem for rolling dice... the Cool way.", :content => "My Gem for rolling dice... the Cool way." )
 puts "done!"
