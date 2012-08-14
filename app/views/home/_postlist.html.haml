@@ -1,6 +1,6 @@
 %div.row-fluid.post_list
   %div.span12
-    %h4
+    %h3
       Post List
   %div.row-fluid.posts
     - @posts.each do |post|
@@ -12,6 +12,6 @@
           %p.admin_text= link_to 'Edit', edit_post_path(post)
           %p.admin_text= "|"
           %p.admin_text= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
-          %br
-          %br
-          %br
+  %div.row-fluid
+    %div.span10
+      %p.read_more= link_to "See More Posts", posts_path

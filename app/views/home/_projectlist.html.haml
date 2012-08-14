@@ -1,6 +1,6 @@
 %div.row-fluid.project_list
   %div.span12
-    %h4
+    %h3
       Project List
   %div.row-fluid.posts
     - @projects.each do |project|
@@ -12,6 +12,7 @@
           %p.admin_text= link_to 'Edit', edit_project_path(project)
           %p.admin_text= "|"
           %p.admin_text= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
-          %br
-          %br
-          %br
+  %div.row-fluid
+    %div.span10
+      %p.read_more= link_to "See More Projects", projects_path
+
