@@ -4,13 +4,13 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-p.admin_text { 
+p.admin_text {
 float: left;
 }
 
 .alert {
 background-color: transparent;
-border-color: transparent;  
+border-color: transparent;
 }
 
 .admin_bar {
@@ -25,14 +25,21 @@ clear:both;
 float:right;
 }
 
-//.sidebar-nav-fixed {
-    //padding: 9px 0;
-    //position:fixed;
-    //left:20px;
-    //top:60px;
-    //width:250px;
-//}
+@media (min-width: 768px) {
+  .sb-fixed{
+    position: fixed;
+  }
+}
+.sidebar-nav-fixed {
+    padding: 9px 0;
+    position:fixed;
+    left:20px;
+    top:60px;
+    width:250px;
+}
 
-//.row-fluid > .span-fixed-sidebar {
-    //margin-left: 290px;
-//}
+@media (min-width: 768px) {
+  .row-fluid > .span-fixed-sidebar {
+      margin-left: 290px;
+  }
+}
