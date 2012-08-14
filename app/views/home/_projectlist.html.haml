@@ -1,12 +1,17 @@
-- @projects.each do |project|
-  %div.span4
-    %h4= link_to project.title, project
-    %p= project.blurb
-    -#%p= format post.content
-    - if @user
-      %p.admin_text= link_to 'Edit', edit_project_path(project)
-      %p.admin_text= "|"
-      %p.admin_text= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
-      %br
-      %br
-      %br
+%div.row-fluid.project_list
+  %div.span12
+    %h4
+      Project List
+  %div.row-fluid.posts
+    - @projects.each do |project|
+      %div.span4
+        %h4= link_to project.title, project
+        %p= project.blurb
+        -#%p= format post.content
+        - if user_signed_in?
+          %p.admin_text= link_to 'Edit', edit_project_path(project)
+          %p.admin_text= "|"
+          %p.admin_text= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
+          %br
+          %br
+          %br

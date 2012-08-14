@@ -1,12 +1,17 @@
-- @posts.each do |post|
-  %div.span4
-    %h4= link_to post.title, post
-    %p= post.blurb
-    -#%p= format post.content
-    - if @user
-      %p.admin_text= link_to 'Edit', edit_post_path(post)
-      %p.admin_text= "|"
-      %p.admin_text= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
-      %br
-      %br
-      %br
+%div.row-fluid.post_list
+  %div.span12
+    %h4
+      Post List
+  %div.row-fluid.posts
+    - @posts.each do |post|
+      %div.span4
+        %h4= link_to post.title, post
+        %p= post.blurb
+        -#%p= format post.content
+        - if @user
+          %p.admin_text= link_to 'Edit', edit_post_path(post)
+          %p.admin_text= "|"
+          %p.admin_text= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+          %br
+          %br
+          %br

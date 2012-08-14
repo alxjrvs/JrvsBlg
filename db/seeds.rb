@@ -8,6 +8,7 @@
 
   alx = User.create(:fname => "Alex", :lname => "Jarvis", :email => "alxjrvs@gmail.com", :password =>"foobar")
 
+  alx.posts.create(:title => "SHOULD NOT SEE ME", :content => "BLANK", :blurb => "BLANK")
   alx.posts.create(:title => "Songs from the Tommorow's of Yesterday's present", :content => "##It's Simple. 
 **Kill the Batman.**
 ", :blurb => "A brief look inward.")
@@ -20,6 +21,7 @@
 *how does this look?*
 **How about this?**", :blurb => "Diddy dum diddy do.")
 
+  alx.projects.create(:title => "Should not see me", :content =>"BLANK", :blurb => "BLANK" )
   alx.projects.create(:title => "Pathfounder", :content => "A cool thing I am making for people who play the 'Pathfinder' RPG.", :blurb => "A cool thing I am making for people who play the 'Pathfinder' RPG."  )
   alx.projects.create(:title => "Pathfounder", :content => "A cool thing I am making for people who play the 'Pathfinder' RPG.", :blurb => "A cool thing I am making for people who play the 'Pathfinder' RPG."  )
   alx.projects.create(:title => "Rollr", :blurb => "My Gem for rolling dice... the Cool way.", :content => "My Gem for rolling dice... the Cool way." )
