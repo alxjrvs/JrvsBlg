@@ -32,13 +32,22 @@ p.admin_text {
   //padding-left:35%;
   //padding-top:5%;
 //}
-
+@media (max-width: 480px) {
+  .header_image {
+    margin-left: 25%;
+    float:none!important;
+  }
+}
 @media (max-width: 767px) {
+  .header_blurb {
+    float:left;
+    //width:40%;
+  }
   .header_image {
     float:left;
     //width:40%;
   }
-  .header_list { 
+  .header_list {
     float:left;
     padding:6px;
   }
@@ -47,10 +56,13 @@ p.admin_text {
   .sb-fixed{
     position: fixed;
   }
-  .header_image {
-    clear:both; 
+  .header_blurb {
+    clear:both;
   }
-  .header_list { 
+  .header_image {
+    clear:both;
+  }
+  .header_list {
     clear:both;
   }
   .sidebar-nav-fixed {

@@ -3,18 +3,16 @@
     %div.header_area
       %div.header_image
         =image_tag "another_story.png"
-      %div.header_image
+      %div.header_blurb
         %h1
           I'm Alex.
           %br
           %small Hey. Here is some text to get you through the day.
 
-%div.row-fluid
-  %div.span12
-    %div.nav_area
-      %div.header_list
-        %p=link_to  "Posts", "#post_list"
-      %div.header_list
-        %p=link_to  "Projects", "#project_list"
-      %div.header_list
-        = render "shared/admin_bar"
+        %div.nav_area
+          %div.header_list
+            %p=link_to  "Posts", "#post_list"
+          %div.header_list
+            %p=link_to  "Projects", "#project_list"
+          %div.header_list
+            = render "shared/admin_bar"
