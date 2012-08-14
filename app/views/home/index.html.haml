@@ -1,6 +1,11 @@
-%div.row-fluid.post_list
-  =render "postlist"
-%div.row-fluid.project_list
-  =render "projectlist"
--if @user
-  = link_to 'New Page', new_post_path
+%div.span3
+  =render "shared/homepagesidebar"
+%div.span9
+  %div.row-fluid.splash
+    =render "splash"
+  %div.row-fluid.post_list
+    =render "postlist"
+  %div.row-fluid.project_list
+    =render "projectlist"
+  -if @user
+    = link_to 'Admin', alx_admin_index_path

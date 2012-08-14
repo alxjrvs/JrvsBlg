@@ -7,13 +7,5 @@
     = csrf_meta_tags
   %body
     %div.container-fluid
-      %div.page-header
-        %div.row-fluid
-          %div.span3
-            %h1
-              I'm Alex. Hey.
-              %small I am what you call a "giver".
-          %div.span9
-            = yield
-            %p.notice= notice
-            %p.alert= alert
+      %div.row-fluid
+        = yield
