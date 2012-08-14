@@ -25,6 +25,10 @@ p.admin_text {
   float:right;
 }
 
+.header_list p { 
+    font-size: 20px;
+  }
+
 .header {
   clear:both
   }
@@ -36,6 +40,9 @@ p.admin_text {
   .header_image {
     margin-left: 25%;
     float:none!important;
+  }
+  .header_text {
+    text-align:center;
   }
 }
 @media (max-width: 767px) {
@@ -49,7 +56,8 @@ p.admin_text {
   }
   .header_list {
     float:left;
-    padding:6px;
+    padding:16px 0;
+    width:30%;
   }
 }
 @media (min-width: 768px) {
@@ -64,12 +72,13 @@ p.admin_text {
   }
   .header_list {
     clear:both;
+    float:right;
+    padding:5px 0;
   }
   .sidebar-nav-fixed {
       padding: 9px 0;
       position:fixed;
       left:20px;
-      top:10%;
       width:250px;
   }
 
