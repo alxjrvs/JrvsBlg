@@ -73,15 +73,19 @@ p.admin_text {
   .header_list {
     clear:both;
     float:right;
-    padding:5px 0;
+    padding:8px 0;
   }
   .sidebar-nav-fixed {
       padding: 9px 0;
       position:fixed;
       left:20px;
+      top:3%;
       width:250px;
   }
 
+  .nav_area {
+  padding-top:25px;
+}
   .row-fluid > .span-fixed-sidebar {
       margin-left: 290px;
   }
