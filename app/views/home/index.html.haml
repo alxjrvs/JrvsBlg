@@ -1,17 +1,15 @@
 %div.row-fluid
-  %div.span12
-    %div.row-fluid
-      - @pages.each do |page|
-        %div.span4
-          %h4= link_to page.title, page
-          %p= page.blurb
-          -#%p= format page.content
-          - if @user
-            %p.admin_text= link_to 'Edit', edit_page_path(page)
-            %p.admin_text= "|"
-            %p.admin_text= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete
-            %br
-            %br
-            %br
+  - @pages.each do |page|
+    %div.span4
+      %h4= link_to page.title, page
+      %p= page.blurb
+      -#%p= format page.content
+      - if @user
+        %p.admin_text= link_to 'Edit', edit_page_path(page)
+        %p.admin_text= "|"
+        %p.admin_text= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete
+        %br
+        %br
+        %br
 -if @user
   = link_to 'New Page', new_page_path
