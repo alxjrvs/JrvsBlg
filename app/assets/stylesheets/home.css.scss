@@ -25,14 +25,33 @@ p.admin_text {
   float:right;
 }
 
-.sidebar-nav-fixed {
-  padding-left:35%;
-  padding-top:5%;
-}
+.header {
+  clear:both
+  }
+//.sidebar-nav-fixed {
+  //padding-left:35%;
+  //padding-top:5%;
+//}
 
+@media (max-width: 767px) {
+  .header_image {
+    float:left;
+    //width:40%;
+  }
+  .header_list { 
+    float:left;
+    padding:6px;
+  }
+}
 @media (min-width: 768px) {
   .sb-fixed{
     position: fixed;
+  }
+  .header_image {
+    clear:both; 
+  }
+  .header_list { 
+    clear:both;
   }
   .sidebar-nav-fixed {
       padding: 9px 0;
