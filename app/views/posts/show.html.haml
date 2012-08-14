@@ -3,6 +3,12 @@
 %h1= @post.title
 %p= format @post.content
 
-= link_to 'Edit', edit_post_path(@post)
-\|
-= link_to 'Back', posts_path
+-if user_signed_in?
+  = link_to 'Edit', edit_post_path(@post)
+  \|
+  = link_to 'Back', posts_path
+
+-if @next
+  %p= link_to "Next", post_path(@next)
+-if @prev
+  %p= link_to "Previous", post_path(@prev)
