@@ -5,24 +5,27 @@
 @import "bootstrap-responsive";
 
 p.admin_text {
-float: left;
+  float: left;
 }
 
 .alert {
-background-color: transparent;
-border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .admin_bar {
-float: left;
+  float: left;
 }
 
 .clear {
-clear:both;
+  clear:both;
 }
 
 .read_more {
-float:right;
+  float:right;
+}
+.sidebar-nav-fixed {
+  padding-top:40px;
 }
 
 @media (min-width: 768px) {
