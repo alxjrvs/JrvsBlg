@@ -10,8 +10,8 @@ margin:10% 0 0 5%;
 $span3width: 23.077%;
 #next_box{
    left:0px;
-   top:0px;
    height:30px;
+   bottom:0px;
    width: $span3width;
    background:#E6E6E6;
    text-align:center;
@@ -19,20 +19,27 @@ $span3width: 23.077%;
 
 #previous_box {
    left:0px;
-   bottom:0px;
+   top:0px;
    height:30px;
    background:#E6E6E6;
    text-align:center;
 }
 
+#next_box p {
+  line-height: 2;
+}
+#previous_box p {
+  line-height: 2;
+}
+
 @media (max-width: 767px){
   #next_box {
-  position:absolute;
+  position:fixed;
    width: 100%;
   }
   #previous_box {
    width: 100%;
-  position:fixed;
+  position:absolute;
   }
   }
 @media (min-width: 768px){
