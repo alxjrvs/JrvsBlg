@@ -9,7 +9,6 @@ margin:15% 5% 0  8%;
 
 #sidebar {
   height:100%;
-  border-right: 2px solid black;
   border-radius: 4px;
 
 }
@@ -19,19 +18,29 @@ $span3width: 23.077%;
    left:0px;
    height:30px;
    bottom:0px;
+   color:#999;
    width: $span3width;
-   background:#E6E6E6;
-   border-top: 2px solid  lightgrey; 
    text-align:center;
+}
+#next_box:hover {
+   border-top: 2px solid  lightgrey; 
+   color: black;
+   background:#E6E6E6;
+}
+#previous_box:hover {
+   border-bottom: 2px solid  lightgrey; 
+   color: black;
+   background:#E6E6E6;
 }
 
 #previous_box {
-   border-bottom: 2px solid  lightgrey; 
+   //border-bottom: 2px solid  lightgrey; 
    left:0px;
    top:0px;
+   color:#999;
    height:30px;
    border-radius-top: 4px ;
-   background:#E6E6E6;
+   //background:#E6E6E6;
    text-align:center;
 }
 
@@ -49,6 +58,10 @@ $span3width: 23.077%;
   position:fixed;
    width: 100%;
   }
+  .nav_area { 
+  border-bottom: 1px soolid #e6e6e6; 
+  min-height:50px;
+  }
   #previous_box {
    width: 100%;
   position:absolute;
@@ -58,6 +71,9 @@ $span3width: 23.077%;
   #next_box {
   position:fixed;
    width: $span3width;
+  }
+  #sidebar {
+  border-right: 1px solid #e6e6e6; 
   }
   #previous_box {
   position:fixed;
