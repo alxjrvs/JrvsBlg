@@ -3,12 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #header_area {
+clear:both;
 margin:10% 0 0 5%;
 }
 
 $span3width: 23.077%;
 #next_box{
-  position:fixed;
    left:0px;
    top:0px;
    height:30px;
@@ -18,7 +18,6 @@ $span3width: 23.077%;
 }
 
 #previous_box {
-  position:fixed;
    left:0px;
    bottom:0px;
    height:30px;
@@ -28,17 +27,21 @@ $span3width: 23.077%;
 
 @media (max-width: 767px){
   #next_box {
-   width: 100%; 
+  position:absolute;
+   width: 100%;
   }
   #previous_box {
    width: 100%;
+  position:fixed;
   }
   }
 @media (min-width: 768px){
   #next_box {
+  position:fixed;
    width: $span3width;
   }
   #previous_box {
+  position:fixed;
    width: $span3width;
   }
   }
