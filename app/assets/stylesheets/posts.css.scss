@@ -2,6 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin post_nav_hover {
+   color: black;
+   background:#E6E6E6;
+}
+
+@mixin post_nav {
+   left:0px;
+   height:30px;
+   color:#999;
+   width: $span3width;
+   text-align:center;
+}
+
+@mixin post_nav_phone {
+  position:relative;
+   width: 100%;
+  }
+
+@mixin post_nav_desktop {
+  position:fixed;
+   width: $span3width;
+}
+
 #header_area {
 clear:both;
 margin:15% 5% 0  8%;
@@ -15,68 +38,83 @@ margin:15% 5% 0  8%;
 
 $span3width: 23.077%;
 #next_box{
-   left:0px;
-   height:30px;
-   bottom:0px;
-   color:#999;
-   width: $span3width;
-   text-align:center;
+  bottom:0px;
+  @include post_nav;
 }
 #next_box:hover {
-   border-top: 2px solid  lightgrey; 
-   color: black;
-   background:#E6E6E6;
+  @include post_nav_hover;
+   border-top: 2px solid  lightgrey;
 }
 #previous_box:hover {
-   border-bottom: 2px solid  lightgrey; 
-   color: black;
-   background:#E6E6E6;
+  @include post_nav_hover;
+   border-bottom: 2px solid  lightgrey;
 }
 
 #previous_box {
-   //border-bottom: 2px solid  lightgrey; 
-   left:0px;
    top:0px;
-   color:#999;
-   height:30px;
-   border-radius-top: 4px ;
-   //background:#E6E6E6;
-   text-align:center;
+  @include post_nav;
 }
 
 #next_box p {
   margin-bottom: 1%;
-  margin-top: 3%;
   line-height: 0;
 }
 #previous_box p {
   line-height: 0;
 }
 
+  #next_box_alt {
+    @include post_nav;
+    @include post_nav_phone;
+  }
+
 @media (max-width: 767px){
+
+
+  #next_box p {
+    margin-top: 2%;
+  }
+
   #next_box {
-  position:fixed;
-   width: 100%;
+    @include post_nav_phone;
   }
-  .nav_area { 
-  border-bottom: 1px soolid #e6e6e6; 
-  min-height:50px;
+  .nav_area {
+    border-bottom: 1px solid #e6e6e6;
+    min-height:50px;
   }
+
   #previous_box {
-   width: 100%;
-  position:absolute;
+    @include post_nav_phone;
   }
+  .main {
+    display:none;
   }
+
+  #header_area {
+    clear:both;
+    margin:5% 5% 0  8%;
+  }
+}
 @media (min-width: 768px){
+
+  #header_area {
+    clear:both;
+    margin:15% 5% 0  8%;
+  }
+  .alt {
+    display:none;
+  }
+  #next_box p {
+    margin-top: 3%;
+  }
+
   #next_box {
-  position:fixed;
-   width: $span3width;
+  @include post_nav_desktop;
   }
   #sidebar {
-  border-right: 1px solid #e6e6e6; 
+  border-right: 1px solid #e6e6e6;
   }
   #previous_box {
-  position:fixed;
-   width: $span3width;
+  @include post_nav_desktop;
   }
-  }
+}

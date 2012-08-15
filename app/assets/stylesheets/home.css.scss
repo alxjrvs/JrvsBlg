@@ -32,11 +32,9 @@ p.admin_text {
 .header {
   clear:both
   }
-//.sidebar-nav-fixed {
-  //padding-left:35%;
-  //padding-top:5%;
-//}
+
 @media (max-width: 480px) {
+
   .header_image {
     margin-left: 25%;
     float:none!important;
@@ -45,7 +43,12 @@ p.admin_text {
     text-align:center;
   }
 }
+
 @media (max-width: 767px) {
+
+  .container-fluid {
+    padding:0 0 0 0;
+  }
   .header_blurb {
     float:left;
     //width:40%;
@@ -60,7 +63,12 @@ p.admin_text {
     width:30%;
   }
 }
+
 @media (min-width: 768px) {
+
+  .container-fluid {
+    padding:10px 0 0 0;
+  }
   .sb-fixed{
     position: fixed;
   }
@@ -92,6 +100,3 @@ p.admin_text {
   }
 }
 
-.container-fluid {
-  padding:10px 0 0 0;
-}
