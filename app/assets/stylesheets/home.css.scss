@@ -76,21 +76,23 @@ p.admin_text {
     padding:8px 0;
   }
   .sidebar-nav-fixed {
+      border-right:1px;
+      border-color:black;
       padding: 9px 0;
       position:fixed;
-      left:20px;
-      top:3%;
-      width:250px;
+      //left:20px;
+      top:0%;
+      //width:250px;
   }
 
   .nav_area {
   padding-top:25px;
 }
   .row-fluid > .span-fixed-sidebar {
-      margin-left: 290px;
+      margin-left: 325px;
   }
 }
 
 .container-fluid {
-  padding-top:30px;
+  padding:10px 0 0 0;
 }

@@ -1,13 +1,8 @@
-%div.span.sb-fixed
-  %div.sidebar-nav-fixed
-    =render "postsidebar"
-%div.span8.span-fixed-sidebar#main-content
+%div.span3.sb-fixed#sidebar.sidebar-nav-fixed
+  =render "postsidebar"
+%div.span9.span-fixed-sidebar#main-content
   %p#notice= notice
 
   %h1= @post.title
   %p= format @post.content
 
-  -if user_signed_in?
-    = link_to 'Edit', edit_post_path(@post)
-    \|
-    = link_to 'Back', posts_path
