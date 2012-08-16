@@ -3,8 +3,8 @@
     %div#previous_box
       %i.icon-chevron-up
       %p Previous
--else
-  =render "postend"
+-#-else
+  -#=render "postend"
 
 %div#header_area
   %div.header_image
@@ -32,6 +32,6 @@
     %div#next_box.main
       %p Next
       %i.icon-chevron-down
--else 
-  %div.main
-    =render "postend"
+-#-else 
+  -#%div.main
+    -#=render "postend"
