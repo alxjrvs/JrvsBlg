@@ -6,10 +6,12 @@
   %h1#post-title= @post.title
   %p#post-content= format @post.content
 
-  %div#postend
-    =render "postend"
-  -if @next
-    %a{:href => post_path(@next)}
-      %div#next_box.alt
-        %p Next
-        %i.icon-chevron-down
+  %div.row-fluid
+    %div.span12
+      %div#postend
+        =render "postend"
+-if @next
+  %a{:href => post_path(@next)}
+    %div#next_box.alt
+      %p Next
+      %i.icon-chevron-down

@@ -1,6 +1,7 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$span3width: 23.077%;
 
 @mixin post_nav_hover {
    color: black;
@@ -25,9 +26,16 @@
    width: $span3width;
 }
 
+#post_end {
+  @include post_nav;
+  @include post_nav_phone;
+  background:#E6E6E6;
+  padding-right:100%;
+}
+
 #header_area {
-clear:both;
-margin:15% 5% 0  8%;
+  clear:both;
+  margin:15% 5% 0  8%;
 }
 
 #sidebar {
@@ -36,7 +44,6 @@ margin:15% 5% 0  8%;
 
 }
 
-$span3width: 23.077%;
 #next_box{
   bottom:0px;
   @include post_nav;
