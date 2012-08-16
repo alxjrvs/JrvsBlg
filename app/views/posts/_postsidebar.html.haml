@@ -28,10 +28,10 @@
   \|
   = link_to 'Back', posts_path
 -if @next
-  %a.visible-desktop{:href => post_path(@next)}
+  %a.main{:href => post_path(@next)}
     %div#next_box.main
       %p Next
       %i.icon-chevron-down
 -else 
-  %div.visible-desktop
+  %div.main
     =render "postend"
