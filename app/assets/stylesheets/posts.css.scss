@@ -124,8 +124,17 @@ $span3width: 23.077%;
   #next_box {
   @include post_nav_desktop;
   }
+  #post hr {
+    margin-left:-3%;
+    width:106.5%;
+  }
   #sidebar {
-  border-right: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    box-shadow: 1px 1px 8px 0px #E6E6E6;
+  }
+  #post {
+    margin-left:3%;
+    
   }
   #previous_box {
   @include post_nav_desktop;

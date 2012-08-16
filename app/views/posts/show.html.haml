@@ -2,10 +2,7 @@
   =render "postsidebar"
 %div.span9.span-fixed-sidebar#main-content
   %p#notice= notice
-
-  %h1#post-title= @post.title
-  %p#post-content= format @post.content
-
+  =render "postcontent"
   -if @next
     %a{:href => post_path(@next)}
       %div#next_box.alt
