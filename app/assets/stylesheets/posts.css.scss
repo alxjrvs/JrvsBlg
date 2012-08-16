@@ -28,9 +28,15 @@ $span3width: 23.077%;
 
 #post_end {
   @include post_nav;
-  @include post_nav_phone;
+  //@include post_nav_phone;
   background:#E6E6E6;
-  padding-right:100%;
+  width:103.5%;
+ border-top: 2px solid  lightgrey;
+}
+
+#post_end:hover {
+ @include post_nav_hover;
+ border-top: 2px solid  lightgrey;
 }
 
 #header_area {
