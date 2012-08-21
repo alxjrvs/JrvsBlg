@@ -13,6 +13,11 @@ p.admin_text {
   z-index:1;
 }
 
+#nav-area {
+  clear: both;
+  width: 100%;
+  overflow:auto;
+}
 .alert {
   background-color: transparent;
   border-color: transparent;

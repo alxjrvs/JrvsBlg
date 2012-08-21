@@ -30,11 +30,5 @@
   = link_to 'Edit', edit_post_path(@post)
   \|
   = link_to 'Back', posts_path
--if @next
-  %a.main{:href => post_path(@next)}
-    %div#next_box.main
-      %p Next
-      %i.icon-chevron-down
--#-else 
-  -#%div.main
-    -#=render "postend"
+%div#post_end.visible-desktop
+  = render "postend"
