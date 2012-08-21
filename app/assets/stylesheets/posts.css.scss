@@ -12,51 +12,14 @@ $span3width: 23.077%;
 #post-title h1{
   margin:1%;
 }
-@mixin post_nav_hover {
-   color: black;
-   background:#E6E6E6;
-}
-
-@mixin post_nav {
-   left:0px;
-   height:30px;
-   color:#999;
-   width: $span3width;
-   text-align:center;
-}
-
-@mixin post_nav_phone {
-  position:relative;
-   width: 100%;
-  }
-
-@mixin post_nav_desktop {
-  position:fixed;
-   width: $span3width;
-}
-
-#post_end {
-  @include post_nav;
-  //@include post_nav_phone;
-  background:#E6E6E6;
-  width:103.5%;
- border-top: 2px solid  lightgrey;
-}
-
-#post_end:hover {
- @include post_nav_hover;
- border-top: 2px solid  lightgrey;
-}
 
 #header_area {
   clear:both;
-  margin:15% 5% 0  8%;
 }
 
 #sidebar {
   height:100%;
   border-radius: 4px;
-
 }
 
 .post_box {
@@ -67,32 +30,14 @@ $span3width: 23.077%;
 .post_nav {
   width: 50%;
 }
-#next_box:hover {
-  @include post_nav_hover;
-   border-top: 2px solid  lightgrey;
-}
 #next_box{
   float:right;
   width: inherit;
 }
-#next_box:hover {
-}
-#previous_box:hover {
-}
-
 #previous_box {
   float:left;
   width: inherit;
-
 }
-
-#next_box p {
-}
-#previous_box p {
-}
-
-  #next_box_alt {
-  }
 
 @media (max-width: 767px){
 
@@ -116,10 +61,6 @@ $span3width: 23.077%;
     display:none;
   }
 
-  #header_area {
-    clear:both;
-    margin:5% 5% 0  8%;
-  }
 }
 @media (min-width: 768px){
   #post-title {
@@ -127,11 +68,6 @@ $span3width: 23.077%;
     position:fixed;
     border-bottom: 1px solid #E3E3E3;
     box-shadow: 1px 1px 8px 0px #E6E6E6;
-    
-  }
-  #header_area {
-    clear:both;
-    margin:15% 5% 0  8%;
   }
   .alt {
     display:none;
@@ -152,6 +88,4 @@ $span3width: 23.077%;
     margin-top:8%;
   }
   #previous_box {
-  @include post_nav_desktop;
   }
-}

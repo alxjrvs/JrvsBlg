@@ -13,7 +13,7 @@ p.admin_text {
   z-index:1;
 }
 
-#nav-area {
+#nav_area {
   clear: both;
   width: 100%;
   overflow:auto;
@@ -48,7 +48,9 @@ p.admin_text {
   color: #232323;
 }
 @media (max-width: 480px) {
-
+  .hidden-desktop {
+    display:none;
+  }
   .header_image {
     margin-left: 25%;
     float:none!important;
@@ -62,6 +64,13 @@ p.admin_text {
 }
 
 @media (max-width: 767px) {
+  .visible-phone {
+    display:none;
+  }
+
+  .visible-desktop{
+    display:none;
+  }
 
   #sidebar {
     clear:both;
@@ -86,6 +95,9 @@ p.admin_text {
 }
 
 @media (min-width: 768px) {
+  .hidden-phone { 
+    display:none;
+  }
   #main-content {
     overflow-x: hidden;
     margin-top: -.8%;
@@ -105,7 +117,6 @@ p.admin_text {
   }
   .header_list {
     clear:both;
-    float:right;
     padding:8px 0;
     width:98%;
     border-left:6px solid #555;

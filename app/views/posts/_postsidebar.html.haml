@@ -1,20 +1,13 @@
--if @prev
-  %a#previous_box{:href => post_path(@prev)}
-    %div#previous_box
-      %i.icon-chevron-up
-      %p Previous
--#-else
-  -#=render "postend"
-
-%div#header_area
-  %div.header_image
-    =image_tag "another_story.png"
-  %div.header_blurb
-    %h1.header_text
-      Blog.
-      %br
-      %small
-        My thoughts on Fiction and the Future
+%div#header_area.row-fluid
+  %div.span12
+    %div.header_image
+      =image_tag "another_story.png"
+    %div.header_blurb
+      %h1.header_text
+        Blog.
+        %br
+        %small
+          My thoughts on Fiction and the Future
 
 %div#nav_area
   =link_to(posts_path) do
