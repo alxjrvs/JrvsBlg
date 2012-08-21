@@ -1,3 +1,11 @@
+-if @prev
+  %a#previous_box{:href => post_path(@prev)}
+    %div#previous_box
+      %i.icon-chevron-up
+      %p Previous
+-#-else
+  -#=render "postend"
+
 %div#header_area
   %div.header_image
     =image_tag "another_story.png"
@@ -9,10 +17,10 @@
         My thoughts on Fiction and the Future
 
 %div#nav_area
-  =link_to(post_path) do
+  =link_to(posts_path) do
     %div.header_list
       %p Posts
-  =link_to(project_path) do
+  =link_to(projects_path) do
     %div.header_list
       %p Projects
   -if user_signed_in? 
@@ -22,5 +30,11 @@
   = link_to 'Edit', edit_post_path(@post)
   \|
   = link_to 'Back', posts_path
-%div#post_end.desktop
-  = render "postend"
+-if @next
+  %a.main{:href => post_path(@next)}
+    %div#next_box.main
+      %p Next
+      %i.icon-chevron-down
+-#-else 
+  -#%div.main
+    -#=render "postend"

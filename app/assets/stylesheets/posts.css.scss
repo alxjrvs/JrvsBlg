@@ -12,12 +12,40 @@ $span3width: 23.077%;
 #post-title h1{
   margin:1%;
 }
+@mixin post_nav_hover {
+   color: black;
+   background:#E6E6E6;
+}
 
+@mixin post_nav {
+   left:0px;
+   height:30px;
+   color:#999;
+   width: $span3width;
+   text-align:center;
+}
+
+@mixin post_nav_phone {
+  position:relative;
+   width: 100%;
+  }
+
+@mixin post_nav_desktop {
+  position:fixed;
+   width: $span3width;
+}
 
 #post_end {
+  @include post_nav;
+  //@include post_nav_phone;
+  background:#E6E6E6;
+  width:103.5%;
+ border-top: 2px solid  lightgrey;
 }
 
 #post_end:hover {
+ @include post_nav_hover;
+ border-top: 2px solid  lightgrey;
 }
 
 #header_area {
@@ -31,45 +59,36 @@ $span3width: 23.077%;
 
 }
 
-.post_box {
-  width:100%;
-  clear:both;
+#next_box{
+  bottom:0px;
+  @include post_nav;
 }
-
-.post_nav {
-  width: 48%;
-  text-align:center;
+#next_box:hover {
+  @include post_nav_hover;
+   border-top: 2px solid  lightgrey;
 }
-
-.read_more {
-  clear:both;
-}
-#next_box {
-}
-
-#next_box i {
-float:right
-}
-
-#next_box p {
-  text-align: center;
-  clear:none;
+#previous_box:hover {
+  @include post_nav_hover;
+   border-bottom: 2px solid  lightgrey;
 }
 
 #previous_box {
+   top:0px;
+  @include post_nav;
+}
+
+#next_box p {
+  margin-bottom: 1%;
+  line-height: 0;
 }
 #previous_box p {
-  text-align: center;
-}
-#previous_box i {
-  float:left;
+  line-height: 0;
 }
 
-.read_more {
-  width:100%;
-  text-align:center;
-}
-
+  #next_box_alt {
+    @include post_nav;
+    @include post_nav_phone;
+  }
 
 @media (max-width: 767px){
 
@@ -77,9 +96,12 @@ float:right
     text-align:center;
   }
 
-  
+  #next_box p {
+    margin-top: 2%;
+  }
 
   #next_box {
+    @include post_nav_phone;
   }
   .nav_area {
     border-bottom: 1px solid #e6e6e6;
@@ -87,13 +109,12 @@ float:right
   }
 
   #previous_box {
+    @include post_nav_phone;
   }
   .main {
     display:none;
   }
-.title { 
-  clear:both;
-}
+
   #header_area {
     clear:both;
     margin:5% 5% 0  8%;
@@ -105,6 +126,7 @@ float:right
     position:fixed;
     border-bottom: 1px solid #E3E3E3;
     box-shadow: 1px 1px 8px 0px #E6E6E6;
+    
   }
   #header_area {
     clear:both;
@@ -112,6 +134,13 @@ float:right
   }
   .alt {
     display:none;
+  }
+  #next_box p {
+    margin-top: 3%;
+  }
+
+  #next_box {
+  @include post_nav_desktop;
   }
   #sidebar {
     border-right: 1px solid #e6e6e6;
@@ -122,9 +151,6 @@ float:right
     margin-top:8%;
   }
   #previous_box {
+  @include post_nav_desktop;
   }
-  #post_end { 
-    min-height: 20%;
-    padding-top:5%;
-  }
-} 
+}
