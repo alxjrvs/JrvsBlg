@@ -16,13 +16,16 @@
       %small
         My thoughts on Fiction and the Future
 
-    %div.nav_area
-      %div.header_list
-        %p=link_to  "Posts", posts_path
-      %div.header_list
-        %p=link_to  "Projects", projects_path
-      %div.header_list
-        = render "shared/admin_bar"
+%div#nav_area
+  =link_to(post_path) do
+    %div.header_list
+      %p Posts
+  =link_to(project_path) do
+    %div.header_list
+      %p Projects
+  -if user_signed_in? 
+    %div.header_list
+      = render "shared/admin_bar"
 -if user_signed_in?
   = link_to 'Edit', edit_post_path(@post)
   \|

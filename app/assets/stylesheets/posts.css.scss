@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $span3width: 23.077%;
 
+#post {
+  clear:both;
+}
+
 @mixin post_nav_hover {
    color: black;
    background:#E6E6E6;
@@ -134,7 +138,6 @@ $span3width: 23.077%;
   }
   #post {
     margin-left:3%;
-    
   }
   #previous_box {
   @include post_nav_desktop;
