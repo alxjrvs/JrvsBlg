@@ -9,6 +9,10 @@ p.admin_text {
 }
 
 
+#sidebar {
+  z-index:1;
+}
+
 .alert {
   background-color: transparent;
   border-color: transparent;
@@ -34,9 +38,6 @@ p.admin_text {
   clear:both
   }
 
-#main-content {
-  overflow-x: hidden;
-}
 .header_list:hover {
   border-left:6px solid #232323;
   color: #232323;
@@ -80,6 +81,10 @@ p.admin_text {
 }
 
 @media (min-width: 768px) {
+  #main-content {
+    overflow-x: hidden;
+    margin-top: -.8%;
+  }
 
   .container-fluid {
     padding:10px 0 0 0;

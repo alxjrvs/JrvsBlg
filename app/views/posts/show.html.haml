@@ -1,7 +1,6 @@
 %div.span3.sb-fixed#sidebar.sidebar-nav-fixed
   =render "postsidebar"
 %div.span9.span-fixed-sidebar#main-content
-  %p#notice= notice
   =render "postcontent"
   -if @next
     %a{:href => post_path(@next)}
@@ -17,3 +16,4 @@
     %div.span12
       %div#postend.main
         =render "postend"
+  %p#notice= notice

@@ -3,10 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $span3width: 23.077%;
 
-#post {
+#post-title {
   clear:both;
+  width:100%;
+  background:#fff;
 }
 
+#post-title h1{
+  margin:1%;
+}
 @mixin post_nav_hover {
    color: black;
    background:#E6E6E6;
@@ -87,6 +92,9 @@ $span3width: 23.077%;
 
 @media (max-width: 767px){
 
+  #post-title h1{
+    text-align:center;
+  }
 
   #next_box p {
     margin-top: 2%;
@@ -113,7 +121,13 @@ $span3width: 23.077%;
   }
 }
 @media (min-width: 768px){
-
+  #post-title {
+    z-index:0;
+    position:fixed;
+    border-bottom: 1px solid #E3E3E3;
+    box-shadow: 1px 2px 8px 0px #E6E6E6;
+    
+  }
   #header_area {
     clear:both;
     margin:15% 5% 0  8%;
@@ -128,16 +142,13 @@ $span3width: 23.077%;
   #next_box {
   @include post_nav_desktop;
   }
-  #post hr {
-    margin-left:-3%;
-    width:106.5%;
-  }
   #sidebar {
     border-right: 1px solid #e6e6e6;
     box-shadow: 1px 1px 8px 0px #E6E6E6;
   }
-  #post {
-    margin-left:3%;
+  #post-content {
+    margin:3%;
+    margin-top:8%;
   }
   #previous_box {
   @include post_nav_desktop;
