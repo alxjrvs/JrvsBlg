@@ -9,10 +9,13 @@
           %br
           %small Hey. Here is some text to get you through the day.
 
-        %div.nav_area
-          %div.header_list
-            %p=link_to  "Posts", "#post_list"
-          %div.header_list
-            %p=link_to  "Projects", "#project_list"
-          %div.header_list
-            = render "shared/admin_bar"
+    %div#nav_area
+      =link_to("#post_list") do
+        %div.header_list
+          %p Posts
+      =link_to("#project_list") do
+        %div.header_list
+          %p Projects
+      -if user_signed_in? 
+        %div.header_list
+          = render "shared/admin_bar"
