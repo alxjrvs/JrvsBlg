@@ -2,13 +2,13 @@
   -if @next
     %a.post_nav{:href => post_path(@next)}
       %div#next_box
-        %p=" \"#{@next.title} \" "
-        -#%i.icon-chevron-right
+        %i.icon-chevron-right
+        %p.title="#{@next.title}"
   -if @prev
     %a.post_nav{:href => post_path(@prev)}
       %div#previous_box
-        -#%i.icon-chevron-left
-        %p=" \"#{@prev.title} \" "
+        %i.icon-chevron-left
+        %p.title="#{@prev.title}"
 %a.read_more{:href => posts_path}
   %p Read More
 
