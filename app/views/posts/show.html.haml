@@ -2,18 +2,4 @@
   =render "postsidebar"
 %div.span9.span-fixed-sidebar#main-content
   =render "postcontent"
-  -if @next
-    %a{:href => post_path(@next)}
-      %div#next_box.alt
-        %p Next
-        %i.icon-chevron-down
-  -else
-    %div.row-fluid
-      %div.span12
-        %div#postend.alt
-          =render "postend"
-  %div.row-fluid
-    %div.span12
-      %div#postend.main
-        =render "postend"
   %p#notice= notice

@@ -1,3 +1,14 @@
-%a{:href => posts_path}
-  %div#post_end
-    %p Read More
+%div.post_box
+  -if @next
+    %a.post_nav{:href => post_path(@next)}
+      %div#next_box
+        %p=" \"#{@next.title} \" "
+        -#%i.icon-chevron-right
+  -if @prev
+    %a.post_nav{:href => post_path(@prev)}
+      %div#previous_box
+        -#%i.icon-chevron-left
+        %p=" \"#{@prev.title} \" "
+%a.read_more{:href => posts_path}
+  %p Read More
+
